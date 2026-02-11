@@ -3,353 +3,125 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>IQ Market | ایجنت مالی هوشمند + ربات تحلیل بازار | ۳ تحلیل رایگان روزانه</title>
-  <meta name="description" content="IQ Market یک ایجنت مالی هوشمند و ربات تلگرام برای تحلیل ساده و ساختاریافته بازارهای کریپتو، فارکس، طلا/فلزات و کالاهاست. مناسب مبتدی‌ها، روزانه تا ۳ تحلیل رایگان — بدون وعده سود." />
+  <title>IQ Market | آموزش ترید، تحلیل فارکس و کریپتو + طلا و نقره</title>
+  <meta name="description" content="IQ Market مرجع فارسی آموزش ترید در فارکس، کریپتو، ماجورها و فلزات گران‌بها است. به‌همراه نمایش پست‌های کانال و ربات تحلیل روزانه." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-  <meta name="theme-color" content="#0b1220" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
-
+  <meta name="theme-color" content="#070b14" />
   <link rel="canonical" href="https://marketiq.pages.dev/" />
-
-  <!-- Open Graph -->
-  <meta property="og:locale" content="fa_IR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="IQ Market | ایجنت مالی هوشمند + ربات تلگرام" />
-  <meta property="og:description" content="تحلیل آموزشی کریپتو، فارکس، طلا/فلزات و کالاها — روزانه تا ۳ تحلیل رایگان. همچنین آخرین پست‌های کانال در همین صفحه نمایش داده می‌شود." />
+  <meta property="og:locale" content="fa_IR" />
+  <meta property="og:title" content="IQ Market | آموزش ترید و تحلیل بازار" />
+  <meta property="og:description" content="محتوای آموزشی ساختاریافته برای تریدرها + UX سریع + آموزش فارکس، کریپتو، ماجورها، طلا و نقره." />
   <meta property="og:url" content="https://marketiq.pages.dev/" />
-  <meta property="og:site_name" content="IQ Market" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="IQ Market | ۳ تحلیل رایگان روزانه" />
-  <meta name="twitter:description" content="ایجنت مالی هوشمند (آموزشی): ربات تلگرام + کانال. بدون تضمین سود." />
-
-  <!-- PWA -->
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Cpath d='M18 44V20h6l8 14 8-14h6v24h-6V31l-8 13-8-13v13z' fill='%23ffffff'/%3E%3C/svg%3E" />
-
-  <style>
-    :root{
-      --bg:#0b1220; --card:#101a2e; --text:#eaf0ff; --muted:#a9b6d8;
-      --line:rgba(255,255,255,.10); --btn:#ffffff; --btnText:#0b1220;
-      --accent:#7aa2ff;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background:linear-gradient(180deg,#070b14 0%, #0b1220 35%, #070b14 100%);
-      color:var(--text);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      line-height:1.9;
-      text-rendering:optimizeLegibility;
-    }
-    a{color:inherit}
-    .wrap{max-width:1040px; margin:0 auto; padding:28px 16px 56px}
-    header{
-      display:flex; gap:16px; align-items:flex-start; justify-content:space-between;
-      border:1px solid var(--line);
-      background:rgba(16,26,46,.55);
-      padding:18px; border-radius:18px; backdrop-filter: blur(8px);
-    }
-    .brand{display:flex; gap:12px; align-items:center}
-    .logo{
-      width:42px; height:42px; border-radius:12px; background:#0b1220; border:1px solid var(--line);
-      display:grid; place-items:center; flex:0 0 auto;
-    }
-    .logo span{font-weight:800; letter-spacing:.2px}
-    h1{margin:6px 0 10px; font-size:26px}
-    .sub{color:var(--muted); margin:0}
-    .ctaRow{display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-start; margin-top:12px}
-    .btn{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:12px 14px; border-radius:14px; text-decoration:none; border:1px solid var(--line);
-      background:rgba(255,255,255,.06);
-    }
-    .btnPrimary{background:var(--btn); color:var(--btnText); border-color:transparent; font-weight:700;}
-    .pill{display:inline-block; padding:6px 10px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:13px}
-    main{margin-top:18px}
-    .grid{display:grid; grid-template-columns:1.15fr .85fr; gap:14px}
-    @media (max-width:960px){ .grid{grid-template-columns:1fr} header{flex-direction:column} }
-    .card{border:1px solid var(--line); background:rgba(16,26,46,.55); padding:16px; border-radius:18px;}
-    h2{font-size:18px; margin:0 0 8px}
-    h3{font-size:16px; margin:14px 0 6px}
-    ul{margin:8px 0 0; padding:0 18px}
-    .muted{color:var(--muted)}
-    .kpi{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .kpi .pill{background:rgba(255,255,255,.04)}
-    .example{padding:12px; border:1px dashed rgba(122,162,255,.35); border-radius:14px; background:rgba(122,162,255,.06); margin-top:10px}
-    .example b{color:#dbe5ff}
-    footer{margin-top:18px; color:var(--muted); font-size:13px}
-    .faq details{border-top:1px solid var(--line); padding:10px 0}
-    .faq details:first-child{border-top:0}
-    .faq summary{cursor:pointer; font-weight:700}
-    .tag{color:var(--accent); font-weight:700}
-    .postsHeader{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
-    .postsControls{display:flex; gap:8px; flex-wrap:wrap}
-    .input{
-      padding:10px 12px; border-radius:12px; border:1px solid var(--line);
-      background:rgba(255,255,255,.04); color:var(--text); width:260px; max-width:100%;
-    }
-    .postList{margin-top:10px; display:grid; gap:10px}
-    .postItem{
-      border:1px solid var(--line); border-radius:16px; padding:12px;
-      background:rgba(255,255,255,.03);
-    }
-    .postTop{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
-    .postMeta{font-size:12px; color:var(--muted)}
-    .postText{margin:8px 0 0; color:var(--text)}
-    .small{font-size:12px}
-    .spinner{display:inline-block; width:14px; height:14px; border:2px solid rgba(255,255,255,.25); border-top-color:rgba(255,255,255,.9); border-radius:50%; animation:spin 1s linear infinite;}
-    @keyframes spin{to{transform:rotate(360deg)}}
-  </style>
-
-  <!-- Structured Data -->
+  <link rel="stylesheet" href="/styles.css" />
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Organization",
-        "name":"IQ Market",
-        "url":"https://marketiq.pages.dev/",
-        "sameAs":["https://t.me/marketiqai","https://t.me/marketiq_ai_bot"]
-      },
-      {
-        "@type":"WebSite",
-        "name":"IQ Market",
-        "url":"https://marketiq.pages.dev/",
-        "inLanguage":"fa-IR"
-      },
-      {
-        "@type":"SoftwareApplication",
-        "name":"IQ Market Telegram Bot",
-        "applicationCategory":"FinanceApplication",
-        "operatingSystem":"Telegram",
-        "offers":{"@type":"Offer","price":"0","priceCurrency":"IRR","description":"روزانه تا ۳ تحلیل رایگان (آموزشی)."},
-        "url":"https://t.me/marketiq_ai_bot"
-      }
-    ]
+    "@type":"WebSite",
+    "name":"IQ Market",
+    "url":"https://marketiq.pages.dev/",
+    "inLanguage":"fa",
+    "potentialAction":{"@type":"SearchAction","target":"https://marketiq.pages.dev/?q={search_term_string}","query-input":"required name=search_term_string"}
   }
   </script>
 </head>
-
 <body>
-  <div class="wrap">
-    <header>
-      <div>
-        <div class="brand">
-          <div class="logo" aria-hidden="true"><span>IQ</span></div>
-          <div>
-            <div class="pill">ایجنت مالی هوشمند • ربات تلگرام • کانال تحلیل</div>
-            <h1>IQ Market — تصمیم‌گیری دقیق‌تر، با تحلیل هوشمند و ساختاریافته</h1>
-            <p class="sub">بازارها هر ثانیه تغییر می‌کنند؛ تصمیم بر اساس حدس و احساس = ریسک. اینجا تحلیل آموزشی + مدیریت ریسک + همراهی یک ایجنت در کنار شماست.</p>
-          </div>
-        </div>
-
-        <div class="ctaRow">
-          <a class="btn btnPrimary" href="https://t.me/marketiq_ai_bot?start=google" rel="nofollow">شروع ربات (۳ تحلیل رایگان)</a>
-          <a class="btn" href="https://t.me/marketiqai" rel="nofollow">مشاهده کانال @marketiqai</a>
-          <a class="btn" href="#posts">آخرین ۱۰۰ پست کانال</a>
-          <a class="btn" href="/channel" rel="nofollow">لینک کوتاه کانال</a>
-        </div>
-
-        <div class="kpi" aria-label="ویژگی‌ها">
-          <span class="pill"><span class="tag">۳×</span> تحلیل رایگان روزانه</span>
-          <span class="pill">تحلیل چندلایه</span>
-          <span class="pill">شناسایی پول هوشمند</span>
-          <span class="pill">کنترل ریسک قبل از ورود</span>
-        </div>
-      </div>
-
-      <div class="card" style="min-width:280px">
-        <h2>شروع سریع</h2>
-        <ol class="muted" style="margin:8px 0 0; padding:0 18px">
-          <li>ربات را Start کن</li>
-          <li>بازار را انتخاب کن</li>
-          <li>تحلیل روز را بگیر (تا ۳ بار رایگان)</li>
-        </ol>
-        <p class="muted" style="margin:10px 0 0">
-          اگر تلگرام باز نشد، با VPN/Proxy وارد شوید.
-        </p>
-      </div>
+  <div class="container">
+    <header class="topbar card">
+      <div class="brand"><div class="logo">IQ</div><span>IQ Market</span></div>
+      <nav class="nav" aria-label="منوی اصلی">
+        <a class="active" href="/">خانه</a>
+        <a href="/forex.html">آموزش فارکس</a>
+        <a href="/crypto.html">آموزش کریپتو</a>
+        <a href="/majors.html">ماجورها</a>
+        <a href="/metals.html">طلا و نقره</a>
+        <a href="/admin.html">پنل ادمین</a>
+      </nav>
     </header>
 
-    <main class="grid">
-      <section class="card" id="about">
-        <h2>متن معرفی (جای‌گذاری‌شده برای تیزر/صفحه)</h2>
-        <p class="muted">
-          در دنیایی که بازارهای مالی هر ثانیه در حال تغییرند، تصمیم‌گیری صرفاً بر اساس حدس و احساس، یک ریسک جدی است.
-          <b>IQ Market</b> فراتر از یک ابزار؛ یک <b>ایجنت مالی هوشمند</b> برای معامله‌گرانی‌ست که دقت، سرعت و امنیت سرمایه را هم‌زمان می‌خواهند.
-        </p>
+    <section class="hero card">
+      <h1 id="hero-title">پلتفرم هوشمند Trade برای کریپتو، فارکس، طلا و نقره</h1>
+      <p id="hero-description">IQ Market با UX سریع، آموزش ساختارمند و تحلیل روزانه، به شما کمک می‌کند تصمیم‌های کم‌ریسک‌تر بگیرید. این محتوا آموزشی است و توصیه سرمایه‌گذاری نیست.</p>
+      <div class="badges" id="hero-badges"></div>
+      <div class="cta">
+        <a class="btn primary" href="/bot" rel="nofollow">شروع تحلیل با ربات</a>
+        <a class="btn" href="/channel" rel="nofollow">ورود به کانال</a>
+        <a class="btn" href="#academy">رفتن به آموزش‌ها</a>
+      </div>
+    </section>
 
-        <h3>✅ مزیت رقابتی اول | تحلیل هوشمند و ساختاریافته</h3>
-        <ul class="muted">
-          <li>تحلیل چندلایه بازار</li>
-          <li>پردازش داده‌های کلان و خرد</li>
-          <li>شناسایی رفتار پول هوشمند</li>
+    <section class="section card" aria-label="ticker">
+      <div class="ticker">
+        <span class="up">EURUSD +0.31%</span>
+        <span class="down">BTCUSDT -1.24%</span>
+        <span class="up">XAUUSD +0.62%</span>
+        <span class="up">XAGUSD +0.27%</span>
+      </div>
+      <p class="small">نمادها نمونه آموزشی هستند و قیمت لحظه‌ای واقعی محسوب نمی‌شوند.</p>
+    </section>
+
+    <section class="section card" id="academy">
+      <h2>آکادمی چندصفحه‌ای ترید</h2>
+      <div class="grid four">
+        <article class="market-card card">
+          <h3>آموزش فارکس</h3>
+          <p>ساختار بازار، سشن‌ها، مدیریت ریسک و ژورنال معامله.</p>
+          <div class="cta"><a class="btn" href="/forex.html">ورود به صفحه</a></div>
+        </article>
+        <article class="market-card card">
+          <h3>آموزش کریپتو</h3>
+          <p>Market Cycle، آنچین مقدماتی و تفاوت اسپات/فیوچرز.</p>
+          <div class="cta"><a class="btn" href="/crypto.html">ورود به صفحه</a></div>
+        </article>
+        <article class="market-card card">
+          <h3>ماجورها</h3>
+          <p>جزئیات جفت‌ارزهای اصلی مثل EURUSD, GBPUSD, USDJPY.</p>
+          <div class="cta"><a class="btn" href="/majors.html">ورود به صفحه</a></div>
+        </article>
+        <article class="market-card card">
+          <h3>طلا و نقره</h3>
+          <p>رفتار XAUUSD و XAGUSD، همبستگی با دلار و نرخ بهره.</p>
+          <div class="cta"><a class="btn" href="/metals.html">ورود به صفحه</a></div>
+        </article>
+      </div>
+    </section>
+
+    <main class="grid two">
+      <section class="section card">
+        <h2>پلن UX برای معامله‌گر</h2>
+        <ul class="list">
+          <li>مسیر سریع: خانه → آموزش بازار → دریافت تحلیل → بازگشت به ژورنال</li>
+          <li>کاهش شلوغی بصری، تمرکز روی CTAهای کلیدی و تصمیم‌گیری سریع</li>
+          <li>استفاده از ساختار Heading و محتوای FAQ برای تقویت سئو</li>
         </ul>
-        <p class="muted">کمک می‌کند تصمیمات معاملاتی آگاهانه، منطقی و قابل اتکا بگیرید؛ نه واکنشی و هیجانی.</p>
-
-        <h3>✅ مزیت رقابتی دوم | کاهش ریسک، افزایش کنترل</h3>
-        <ul class="muted">
-          <li>شفافیت در نقاط ورود و خروج</li>
-          <li>کنترل ریسک پیش از ورود به معامله</li>
-          <li>جلوگیری از تصمیم‌های احساسی</li>
-        </ul>
-        <p class="muted"><b>نتیجه:</b> کنترل بیشتر، خطای کمتر، ثبات بالاتر.</p>
-
-        <h3>✅ مزیت رقابتی سوم | همراهی یک ایجنت، نه یک ابزار</h3>
-        <ul class="muted">
-          <li>پشتیبانی تحلیلی</li>
-          <li>رویکرد شخصی‌سازی‌شده</li>
-          <li>هم‌راستایی با اهداف مالی</li>
-        </ul>
-        <p class="muted">اینجا، شما تنها معامله نمی‌کنید؛ هوشمندانه هدایت می‌شوید.</p>
-
-        <h3>✅ مزیت رقابتی چهارم | اعتماد، شفافیت، آینده‌نگری</h3>
-        <p class="muted">
-          در بازارهای مالی، اعتماد مهم‌ترین دارایی است. IQ Market با رویکردی شفاف، زیرساختی امن و نگاهی بلندمدت به رشد سرمایه،
-          مسیری مطمئن برای معامله‌گران حرفه‌ای و نیمه‌حرفه‌ای فراهم می‌کند.
-        </p>
-
-        <div class="example">
-          <p style="margin:0"><b>🎯 جمع‌بندی / CTA:</b> اگر به‌دنبال تصمیم‌های دقیق‌تر، ریسک کمتر، و یک ایجنت مالی قابل اعتماد هستید؛
-          IQ Market انتخاب معامله‌گرانی‌ست که بازار را می‌فهمند، نه فقط دنبال می‌کنند.</p>
-        </div>
-
-        <p class="muted small" style="margin-top:10px">
-          هشدار: محتوای این صفحه و کانال صرفاً آموزشی/اطلاع‌رسانی است و تضمین سود یا توصیه سرمایه‌گذاری نیست.
-        </p>
       </section>
-
-      <aside class="card">
-        <h2>ربات + کانال باهم</h2>
-        <p class="muted">
-          برای رشد سریع‌تر، بهترین ترکیب اینه:
-        </p>
-        <ul class="muted">
-          <li>کانال: انتشار تحلیل‌های کوتاه و نمونه خروجی</li>
-          <li>ربات: دریافت تحلیل در لحظه (مبتدی، ساده)</li>
-          <li>صفحه: لینک قابل جستجو در گوگل + نمایش آخرین پست‌ها</li>
-        </ul>
-
-        <h2 style="margin-top:14px">لینک‌ها</h2>
-        <div class="kpi">
-          <span class="pill"><a href="https://t.me/marketiqai" rel="nofollow">@marketiqai</a></span>
-          <span class="pill"><a href="https://t.me/marketiq_ai_bot" rel="nofollow">@marketiq_ai_bot</a></span>
-          <span class="pill"><a href="/bot" rel="nofollow">/bot</a></span>
-          <span class="pill"><a href="/channel" rel="nofollow">/channel</a></span>
-        </div>
-
-        <h2 style="margin-top:14px">نمونه خروجی (آموزشی)</h2>
-        <div class="example">
-          <ul style="margin:0; padding:0 18px">
-            <li><b>BTC:</b> حمایت 43,200 — شکست و تثبیت زیر سطح می‌تواند سناریوی نزولی کوتاه‌مدت را فعال کند.</li>
-            <li><b>XAUUSD:</b> مقاومت 2,040 — عبور معتبر معمولاً با تثبیت بالای سطح تأیید می‌شود.</li>
-          </ul>
+      <aside class="section card">
+        <h2>لینک‌های سریع</h2>
+        <div class="cta">
+          <a class="btn" href="https://t.me/marketiq_ai_bot" rel="nofollow">@marketiq_ai_bot</a>
+          <a class="btn" href="https://t.me/marketiqai" rel="nofollow">@marketiqai</a>
+          <a class="btn" href="/sitemap.xml">sitemap.xml</a>
         </div>
       </aside>
     </main>
 
-    <section class="card" id="posts" style="margin-top:14px">
-      <div class="postsHeader">
-        <div>
-          <h2 style="margin:0">آخرین ۱۰۰ پست کانال</h2>
-          <p class="muted" style="margin:6px 0 0">
-            کانال: <a href="https://t.me/marketiqai" rel="nofollow">@marketiqai</a> — اگر چیزی لود نشد، مستقیم وارد کانال شو.
-          </p>
-        </div>
-        <div class="postsControls">
-          <input id="q" class="input" type="search" placeholder="جستجو داخل ۱۰۰ پست (مثلاً BTC یا طلا)" />
-          <a class="btn" href="https://t.me/marketiqai" rel="nofollow">باز کردن کانال</a>
-        </div>
+    <section class="section card" id="posts">
+      <h2>آخرین ۱۰۰ پست کانال</h2>
+      <div class="cta">
+        <input id="post-search" class="input" type="search" placeholder="جستجو داخل پست‌ها" />
+        <a class="btn" href="https://t.me/marketiqai" rel="nofollow">مشاهده کانال</a>
       </div>
-
-      <div id="status" class="muted" style="margin-top:10px">
-        <span class="spinner" aria-hidden="true"></span>
-        در حال دریافت پست‌ها…
-      </div>
-
-      <div id="list" class="postList" aria-live="polite"></div>
-
-      <noscript>
-        <p class="muted">برای نمایش پست‌ها نیاز به فعال بودن JavaScript است. می‌تونی مستقیم کانال را ببینی: https://t.me/marketiqai</p>
-      </noscript>
-    </section>
-
-    <section class="card faq" id="faq" style="margin-top:14px">
-      <h2>سوالات پرتکرار</h2>
-
-      <details open>
-        <summary>این پروژه سیگنال تضمینی می‌دهد؟</summary>
-        <p class="muted">خیر. خروجی آموزشی/تحلیلی است و هیچ تضمین سودی وجود ندارد.</p>
-      </details>
-
-      <details>
-        <summary>چطور ربات را استفاده کنم؟</summary>
-        <p class="muted">ربات را Start کن، بازار را انتخاب کن، و روزانه تا ۳ تحلیل رایگان بگیر.</p>
-      </details>
-
-      <details>
-        <summary>چرا نمایش پست‌ها ممکن است گاهی دیر لود شود؟</summary>
-        <p class="muted">پست‌ها از صفحه عمومی تلگرام خوانده می‌شوند و ممکن است گاهی محدودیت/کندی شبکه وجود داشته باشد.</p>
-      </details>
+      <p id="status" class="small">در حال بارگذاری...</p>
+      <div id="post-list" class="postList" aria-live="polite"></div>
+      <noscript><p class="small">برای نمایش پست‌ها JavaScript باید فعال باشد.</p></noscript>
     </section>
 
     <footer>
-      <p style="margin:14px 0 0">
-        © <span id="y"></span> IQ Market — محتوا آموزشی است و توصیه سرمایه‌گذاری نیست.
-      </p>
+      <p>© <span id="year"></span> IQ Market — آموزش ترید بدون وعده سود.</p>
     </footer>
   </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    const statusEl = document.getElementById('status');
-    const listEl = document.getElementById('list');
-    const qEl = document.getElementById('q');
-
-    let posts = [];
-
-    function escapeHtml(s) {
-      return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    }
-
-    function render(filter) {
-      const f = (filter || '').trim().toLowerCase();
-      const filtered = !f ? posts : posts.filter(p => (p.text || '').toLowerCase().includes(f));
-      listEl.innerHTML = filtered.map(p => `
-        <div class="postItem">
-          <div class="postTop">
-            <div class="postMeta">${escapeHtml(p.date || '')} • #${escapeHtml(String(p.id))}${p.views ? ' • ' + escapeHtml(String(p.views)) + ' بازدید' : ''}</div>
-            <a class="btn small" href="${escapeHtml(p.url)}" rel="nofollow">مشاهده پست</a>
-          </div>
-          <div class="postText">${escapeHtml(p.text || '')}</div>
-        </div>
-      `).join('');
-
-      if (filtered.length === 0) {
-        listEl.innerHTML = '<div class="muted">نتیجه‌ای پیدا نشد.</div>';
-      }
-    }
-
-    async function loadPosts() {
-      try {
-        const res = await fetch('/api/posts?limit=100', { headers: { 'accept':'application/json' } });
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const data = await res.json();
-        posts = (data.posts || []).slice(0, 100);
-        statusEl.textContent = posts.length ? `نمایش ${posts.length} پست آخر` : 'پستی پیدا نشد.';
-        render('');
-      } catch (e) {
-        statusEl.innerHTML = 'خطا در دریافت پست‌ها. لطفاً بعداً دوباره تلاش کن یا مستقیم وارد کانال شو: <a href="https://t.me/marketiqai" rel="nofollow">https://t.me/marketiqai</a>';
-      }
-    }
-
-    qEl.addEventListener('input', (e) => render(e.target.value));
-    loadPosts();
-  </script>
+  <script src="/app.js" defer></script>
 </body>
 </html>
