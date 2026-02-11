@@ -15,8 +15,4 @@
   - `/bot` → ربات تلگرام
   - `/channel` → کانال تلگرام
 - سئو: متا تگ‌ها + canonical + sitemap index (`/sitemap.xml`) + page sitemap (`/sitemap-pages.xml`)
-
-## Deploy
-- Framework preset: None
-- Build command: (خالی)
-- Output directory: `./`
+`
