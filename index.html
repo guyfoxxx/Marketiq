@@ -137,6 +137,97 @@ footer{margin-top:18px;color:var(--muted);font-size:13px}
 
 <hr style="border:0;border-top:1px solid rgba(255,255,255,.12); margin:14px 0;" />
 
+
+<hr style="border:0;border-top:1px solid rgba(255,255,255,.12); margin:14px 0;" />
+
+<h2 id="live">قیمت لحظه‌ای بازارها</h2>
+<p class="muted">
+این بخش از ویجت TradingView استفاده می‌کند و قیمت‌ها را زنده نشان می‌دهد (ممکن است بسته به اینترنت/VPN گاهی دیر لود شود).
+</p>
+
+<!-- TradingView Ticker Tape -->
+<div class="card" style="padding:12px">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        {"proName":"OANDA:EURUSD","title":"EURUSD"},
+        {"proName":"OANDA:GBPUSD","title":"GBPUSD"},
+        {"proName":"OANDA:USDJPY","title":"USDJPY"},
+        {"proName":"BINANCE:BTCUSDT","title":"BTCUSDT"},
+        {"proName":"BINANCE:ETHUSDT","title":"ETHUSDT"},
+        {"proName":"OANDA:XAUUSD","title":"XAUUSD (Gold)"},
+        {"proName":"OANDA:XAGUSD","title":"XAGUSD (Silver)"},
+        {"proName":"TVC:USOIL","title":"US OIL"}
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "dark",
+      "isTransparent": true,
+      "displayMode": "adaptive",
+      "locale": "en"
+    }
+    </script>
+  </div>
+</div>
+
+<!-- TradingView Market Quotes -->
+<div class="card" style="padding:12px; margin-top:12px">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+    {
+      "width": "100%",
+      "height": 520,
+      "symbolsGroups": [
+        {
+          "name": "Forex",
+          "originalName": "Forex",
+          "symbols": [
+            {"name":"OANDA:EURUSD","displayName":"EUR/USD"},
+            {"name":"OANDA:GBPUSD","displayName":"GBP/USD"},
+            {"name":"OANDA:USDJPY","displayName":"USD/JPY"}
+          ]
+        },
+        {
+          "name": "Crypto",
+          "originalName": "Crypto",
+          "symbols": [
+            {"name":"BINANCE:BTCUSDT","displayName":"BTC/USDT"},
+            {"name":"BINANCE:ETHUSDT","displayName":"ETH/USDT"}
+          ]
+        },
+        {
+          "name": "Metals",
+          "originalName": "Metals",
+          "symbols": [
+            {"name":"OANDA:XAUUSD","displayName":"Gold (XAUUSD)"},
+            {"name":"OANDA:XAGUSD","displayName":"Silver (XAGUSD)"},
+            {"name":"COMEX:HG1!","displayName":"Copper (HG1!)"}
+          ]
+        },
+        {
+          "name": "Commodities",
+          "originalName": "Commodities",
+          "symbols": [
+            {"name":"TVC:USOIL","displayName":"US Oil"},
+            {"name":"NYMEX:NG1!","displayName":"Natural Gas (NG1!)"}
+          ]
+        }
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "dark",
+      "isTransparent": true,
+      "locale": "en"
+    }
+    </script>
+  </div>
+</div>
+
+<p class="muted small" style="margin-top:10px">
+هشدار: قیمت‌ها برای اطلاع‌رسانی نمایش داده می‌شوند. این صفحه توصیه سرمایه‌گذاری یا تضمین سود نیست.
+</p>
+
 <h2 id="posts">آخرین ۱۰۰ پست کانال</h2>
 <p class="muted">اگر لود نشد، مستقیم کانال را باز کن: <a href="https://t.me/marketiqai" rel="nofollow">@marketiqai</a></p>
 
