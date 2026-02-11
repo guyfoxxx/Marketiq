@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>ربات تحلیل بازار برای مبتدی‌ها | روزانه ۳ تحلیل رایگان در تلگرام</title>
+  <meta name="description" content="MarketIQ یک ربات تلگرام برای تحلیل ساده و آموزشی بازارهای کریپتو، فارکس، طلا/فلزات و کالاهاست. روزانه تا ۳ تحلیل رایگان برای مبتدی‌ها — بدون وعده سود." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- اگر Google Search Console بهت کد verification داد، اینجا اضافه کن:
+  <meta name="google-site-verification" content="XXXXXXXXXXXX" />
+  -->
+
+  <link rel="canonical" href="https://mad-pyc.pages.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="fa_IR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ربات تحلیل بازار برای مبتدی‌ها | روزانه ۳ تحلیل رایگان" />
+  <meta property="og:description" content="تحلیل آموزشی کریپتو، فارکس، طلا/فلزات و کالاها — روزانه تا ۳ تحلیل رایگان در تلگرام. بدون تضمین سود." />
+  <meta property="og:url" content="https://mad-pyc.pages.dev/" />
+  <meta property="og:site_name" content="MarketIQ" />
+  <!-- (اختیاری) بعداً اگر تصویر OG گذاشتی، این را فعال کن:
+  <meta property="og:image" content="https://mad-pyc.pages.dev/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="MarketIQ | روزانه ۳ تحلیل رایگان برای مبتدی‌ها" />
+  <meta name="twitter:description" content="ربات تلگرام تحلیل بازار (آموزشی): کریپتو، فارکس، طلا و کالاها. بدون وعده سود." />
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Cpath d='M18 44V20h6l8 14 8-14h6v24h-6V31l-8 13-8-13v13z' fill='%23ffffff'/%3E%3C/svg%3E" />
+
+  <style>
+    :root{
+      --bg:#0b1220; --card:#101a2e; --text:#eaf0ff; --muted:#a9b6d8;
+      --line:rgba(255,255,255,.10); --btn:#ffffff; --btnText:#0b1220;
+      --accent:#7aa2ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#070b14 0%, #0b1220 35%, #070b14 100%);
+      color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      line-height:1.9;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 16px 56px}
+    header{
+      display:flex; gap:16px; align-items:flex-start; justify-content:space-between;
+      border:1px solid var(--line);
+      background:rgba(16,26,46,.55);
+      padding:18px; border-radius:18px; backdrop-filter: blur(8px);
+    }
+    .brand{display:flex; gap:12px; align-items:center}
+    .logo{
+      width:42px; height:42px; border-radius:12px; background:#0b1220; border:1px solid var(--line);
+      display:grid; place-items:center; flex:0 0 auto;
+    }
+    .logo span{font-weight:800; letter-spacing:.2px}
+    h1{margin:4px 0 8px; font-size:26px}
+    .sub{color:var(--muted); margin:0}
+    .ctaRow{display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-start; margin-top:12px}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 14px; border-radius:14px; text-decoration:none; border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+    }
+    .btnPrimary{background:var(--btn); color:var(--btnText); border-color:transparent; font-weight:700;}
+    .pill{display:inline-block; padding:6px 10px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:13px}
+    main{margin-top:18px}
+    .grid{display:grid; grid-template-columns:1.25fr .75fr; gap:14px}
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} header{flex-direction:column} }
+    .card{border:1px solid var(--line); background:rgba(16,26,46,.55); padding:16px; border-radius:18px;}
+    h2{font-size:18px; margin:0 0 8px}
+    ul{margin:8px 0 0; padding:0 18px}
+    .muted{color:var(--muted)}
+    .kpi{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .kpi .pill{background:rgba(255,255,255,.04)}
+    .example{padding:12px; border:1px dashed rgba(122,162,255,.35); border-radius:14px; background:rgba(122,162,255,.06); margin-top:10px}
+    .example b{color:#dbe5ff}
+    footer{margin-top:18px; color:var(--muted); font-size:13px}
+    .faq details{border-top:1px solid var(--line); padding:10px 0}
+    .faq details:first-child{border-top:0}
+    .faq summary{cursor:pointer; font-weight:700}
+    .tag{color:var(--accent); font-weight:700}
+  </style>
+
+  <!-- Structured Data (Schema.org): WebSite + Organization + SoftwareApplication + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"MarketIQ",
+        "url":"https://mad-pyc.pages.dev/",
+        "sameAs":["https://t.me/marketiq_ai_bot"]
+      },
+      {
+        "@type":"WebSite",
+        "name":"MarketIQ",
+        "url":"https://mad-pyc.pages.dev/",
+        "inLanguage":"fa-IR"
+      },
+      {
+        "@type":"SoftwareApplication",
+        "name":"MarketIQ Telegram Bot",
+        "applicationCategory":"FinanceApplication",
+        "operatingSystem":"Telegram",
+        "offers":{
+          "@type":"Offer",
+          "price":"0",
+          "priceCurrency":"IRR",
+          "description":"روزانه تا ۳ تحلیل رایگان (آموزشی)."
+        },
+        "url":"https://t.me/marketiq_ai_bot"
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"این ربات سیگنال خرید/فروش می‌دهد؟",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"خروجی ربات آموزشی/تحلیلی است و توصیه سرمایه‌گذاری یا تضمین سود نیست. تصمیم معامله با خود شماست."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"چه بازارهایی را پوشش می‌دهد؟",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"کریپتو، فارکس، طلا/فلزات و برخی کالاها (بسته به تنظیمات ربات)."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"رایگان تا ۳ بار در روز یعنی چه؟",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"هر روز می‌توانید تا ۳ درخواست تحلیل رایگان ارسال کنید. برای استفاده بیشتر می‌توانید بعداً پلن‌های ارتقا را بررسی کنید."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="brand">
+          <div class="logo" aria-hidden="true"><span>M</span></div>
+          <div>
+            <div class="pill">ربات تلگرام • مناسب مبتدی‌ها</div>
+            <h1>تحلیل بازار ساده و آموزشی — روزانه تا ۳ بار رایگان</h1>
+            <p class="sub">کریپتو، فارکس، طلا/فلزات و کالاها • بدون وعده سود • قابل فهم برای شروع</p>
+          </div>
+        </div>
+
+        <div class="ctaRow">
+          <a class="btn btnPrimary" href="https://t.me/marketiq_ai_bot?start=google" rel="nofollow">شروع در تلگرام</a>
+          <a class="btn" href="#how">چطور کار می‌کند؟</a>
+          <a class="btn" href="#faq">سوالات پرتکرار</a>
+          <a class="btn" href="/bot" rel="nofollow">لینک کوتاه ورود</a>
+        </div>
+
+        <div class="kpi" aria-label="ویژگی‌ها">
+          <span class="pill"><span class="tag">۳×</span> تحلیل رایگان روزانه</span>
+          <span class="pill">سطح‌ها و سناریوها</span>
+          <span class="pill">نوتیفیکیشن</span>
+          <span class="pill">متن ساده برای مبتدی‌ها</span>
+        </div>
+      </div>
+
+      <div class="card" style="min-width:260px">
+        <h2>شروع سریع</h2>
+        <ol class="muted" style="margin:8px 0 0; padding:0 18px">
+          <li>روی «شروع در تلگرام» بزن</li>
+          <li>بازار را انتخاب کن (مثلاً Crypto)</li>
+          <li>تحلیل روز را بگیر (تا ۳ بار رایگان)</li>
+        </ol>
+        <p class="muted" style="margin:10px 0 0">
+          اگر تلگرام باز نشد، با VPN/Proxy وارد شوید.
+        </p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card" id="how">
+        <h2>ربات دقیقاً چه کاری می‌کند؟</h2>
+        <p class="muted">
+          MarketIQ به شما کمک می‌کند در چند ثانیه، یک نگاه آموزشی به وضعیت بازار داشته باشید:
+          <b>سطح‌های مهم</b>، <b>سناریوها</b> و <b>نکات ساده</b> برای مبتدی‌ها.
+        </p>
+
+        <div class="example" aria-label="نمونه خروجی">
+          <p style="margin:0 0 8px"><b>نمونه خروجی (آموزشی):</b></p>
+          <ul>
+            <li><b>BTC:</b> حمایت 43,200 — شکست و تثبیت زیر سطح می‌تواند سناریوی نزولی کوتاه‌مدت را فعال کند.</li>
+            <li><b>XAUUSD (طلا):</b> مقاومت 2,040 — عبور معتبر معمولاً با تثبیت بالای سطح تأیید می‌شود.</li>
+            <li><b>EURUSD:</b> محدوده 1.08–1.09 — خروج از رنج می‌تواند جهت کوتاه‌مدت را مشخص کند.</li>
+          </ul>
+        </div>
+
+        <p class="muted" style="margin-top:12px">
+          <b>هشدار:</b> این محتوا صرفاً آموزشی/اطلاع‌رسانی است و <b>تضمین سود</b> یا توصیه سرمایه‌گذاری نیست.
+        </p>
+      </section>
+
+      <aside class="card">
+        <h2>چه کسانی مناسبش هستند؟</h2>
+        <ul class="muted">
+          <li>تریدر مبتدی که دنبال مسیر ساده است</li>
+          <li>کسی که می‌خواهد “امروز چی مهمه؟” را سریع بفهمد</li>
+          <li>کسی که وقت رصد چند بازار را ندارد</li>
+        </ul>
+
+        <h2 style="margin-top:14px">بازارهای پوشش‌داده‌شده</h2>
+        <div class="kpi">
+          <span class="pill">Crypto</span>
+          <span class="pill">Forex</span>
+          <span class="pill">Gold/Metals</span>
+          <span class="pill">Commodities</span>
+        </div>
+
+        <p style="margin-top:14px">
+          <a class="btn btnPrimary" href="https://t.me/marketiq_ai_bot?start=landing" rel="nofollow">همین الان شروع کن</a>
+        </p>
+        <p class="muted" style="margin-top:10px">
+          برای لینک‌دهی در گوگل/بیو، می‌تونی از <b>https://mad-pyc.pages.dev/</b> استفاده کنی.
+        </p>
+      </aside>
+    </main>
+
+    <section class="card faq" id="faq" style="margin-top:14px">
+      <h2>سوالات پرتکرار</h2>
+
+      <details open>
+        <summary>این ربات سیگنال می‌دهد؟</summary>
+        <p class="muted">خروجی ربات آموزشی/تحلیلی است و تصمیم معامله با شماست. هیچ تضمین سودی ارائه نمی‌شود.</p>
+      </details>
+
+      <details>
+        <summary>رایگان تا ۳ بار در روز یعنی چه؟</summary>
+        <p class="muted">هر روز تا ۳ درخواست تحلیل رایگان می‌تونی بگیری. اگر بعداً نیاز به تعداد بیشتر داشتی، می‌تونی گزینه‌های ارتقا را بررسی کنی.</p>
+      </details>
+
+      <details>
+        <summary>برای مبتدی‌ها چه چیزی را ساده می‌کند؟</summary>
+        <p class="muted">به‌جای اصطلاحات سنگین، روی سطح‌ها، سناریوها و نکته‌های کوتاه تمرکز می‌کند تا مسیر یادگیری ساده‌تر شود.</p>
+      </details>
+
+      <details>
+        <summary>چطور سریع‌تر به ربات برسم؟</summary>
+        <p class="muted">این لینک مستقیم است: <a href="https://t.me/marketiq_ai_bot?start=google" rel="nofollow">@marketiq_ai_bot</a></p>
+      </details>
+    </section>
+
+    <footer>
+      <p style="margin:14px 0 0">
+        © <span id="y"></span> MarketIQ — محتوا آموزشی است و توصیه سرمایه‌گذاری نیست.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
