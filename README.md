@@ -14,9 +14,5 @@
 - لینک‌های کوتاه:
   - `/bot` → ربات تلگرام
   - `/channel` → کانال تلگرام
-- سئو: متا تگ‌ها + canonical + sitemap چندصفحه‌ای
-
-## Deploy
-- Framework preset: None
-- Build command: (خالی)
-- Output directory: `./`
+- سئو: متا تگ‌ها + canonical + sitemap index (`/sitemap.xml`) + page sitemap (`/sitemap-pages.xml`)
+`
