@@ -1,22 +1,22 @@
-# IQ Market Landing (Cloudflare Pages)
+# IQ Market (Cloudflare Pages)
 
-سایت: https://marketiq.pages.dev/
+سایت آموزشی و UX-محور برای ترید در بازارهای فارکس، کریپتو، ماجورها و فلزات گران‌بها.
 
-## امکانات
-- معرفی IQ Market + ربات تلگرام + کانال
-- نمایش آخرین ۱۰۰ پست کانال داخل صفحه (Client + Pages Function)
-- لینک کوتاه:
-  - https://marketiq.pages.dev/bot → ربات
-  - https://marketiq.pages.dev/channel → کانال
-- API:
-  - https://marketiq.pages.dev/api/posts?limit=100
+## امکانات فعلی
+- صفحه اصلی با UX جدید و CTAهای مرتبط با Trade
+- نمایش آخرین ۱۰۰ پست کانال از طریق `/api/posts`
+- صفحات آموزشی مستقل:
+  - `/forex.html`
+  - `/crypto.html`
+  - `/majors.html`
+  - `/metals.html`
+- پنل مدیریت سبک (`/admin.html`) برای ویرایش متن‌های Hero در سمت کلاینت
+- لینک‌های کوتاه:
+  - `/bot` → ربات تلگرام
+  - `/channel` → کانال تلگرام
+- سئو: متا تگ‌ها + canonical + sitemap چندصفحه‌ای
 
 ## Deploy
-Cloudflare Pages:
 - Framework preset: None
-- Build command: خالی
-- Output directory: ./
-
-## Google Search Console
-- Submit sitemap: /sitemap.xml
-- Request indexing برای صفحه اصلی
+- Build command: (خالی)
+- Output directory: `./`

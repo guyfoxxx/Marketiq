@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>پنل ادمین | IQ Market</title>
+  <meta name="description" content="پنل مدیریت صفحات IQ Market برای ویرایش سریع محتوای صفحه اصلی و مدیریت متن CTA." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="canonical" href="https://marketiq.pages.dev/admin.html" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body><div class="container">
+  <header class="topbar card"><div class="brand"><div class="logo">AD</div><span>پنل ادمین</span></div><nav class="nav"><a href="/">خانه</a><a href="/forex.html">فارکس</a><a href="/crypto.html">کریپتو</a><a href="/majors.html">ماجورها</a><a href="/metals.html">طلا و نقره</a><a class="active" href="/admin.html">ادمین</a></nav></header>
+
+  <section class="section card">
+    <h1>مدیریت محتوای صفحه اصلی</h1>
+    <p class="small">این پنل سمت کاربر (localStorage) است و برای مدیریت سریع تیتر/توضیحات UX استفاده می‌شود.</p>
+    <form id="settings-form" class="admin-grid">
+      <div>
+        <div class="field"><label for="heroTitle">عنوان اصلی</label><input id="heroTitle" required /></div>
+        <div class="field"><label for="heroDescription">توضیح اصلی</label><textarea id="heroDescription" required></textarea></div>
+      </div>
+      <div>
+        <div class="field"><label for="heroBadges">برچسب‌ها (با کاما جدا کنید)</label><textarea id="heroBadges"></textarea></div>
+        <div class="cta">
+          <button class="btn primary" type="submit">ذخیره تنظیمات</button>
+          <button class="btn" type="button" id="reset">بازنشانی</button>
+          <button class="btn" type="button" id="export">نمایش JSON</button>
+        </div>
+      </div>
+    </form>
+    <pre id="admin-output" class="small"></pre>
+  </section>
+  <footer><p>© <span id="year"></span> IQ Market</p></footer>
+</div>
+<script src="/admin.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
