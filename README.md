@@ -1,25 +1,22 @@
-# MarketIQ Landing (Cloudflare Pages)
+# IQ Market Landing (Cloudflare Pages)
 
-✅ آماده Deploy روی Cloudflare Pages با دامنه:
-- https://mad-pyc.pages.dev/
+سایت: https://marketiq.pages.dev/
 
-## Deploy از GitHub
-1) این فایل‌ها را داخل یک Repo در GitHub بذار.
-2) Cloudflare → Pages → Create a project → Connect to GitHub repo
-3) Framework preset: None
-4) Build command: (خالی)
-5) Build output directory: ./  
-6) Deploy
+## امکانات
+- معرفی IQ Market + ربات تلگرام + کانال
+- نمایش آخرین ۱۰۰ پست کانال داخل صفحه (Client + Pages Function)
+- لینک کوتاه:
+  - https://marketiq.pages.dev/bot → ربات
+  - https://marketiq.pages.dev/channel → کانال
+- API:
+  - https://marketiq.pages.dev/api/posts?limit=100
 
-## SEO بعد از Deploy (خیلی مهم)
-1) Google Search Console:
-   - Add property → URL prefix → https://mad-pyc.pages.dev/
-   - Verify
-   - Submit sitemap: /sitemap.xml
-   - Request indexing برای صفحه اصلی
+## Deploy
+Cloudflare Pages:
+- Framework preset: None
+- Build command: خالی
+- Output directory: ./
 
-2) اگر کد verification گرفتی:
-   - در index.html داخل `<head>` قسمت google-site-verification را پر کن.
-
-## لینک کوتاه
-- https://mad-pyc.pages.dev/bot  → به ربات تلگرام ریدایرکت می‌کند.
+## Google Search Console
+- Submit sitemap: /sitemap.xml
+- Request indexing برای صفحه اصلی

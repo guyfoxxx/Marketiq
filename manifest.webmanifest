@@ -1,7 +1,7 @@
 {
-  "name": "MarketIQ",
-  "short_name": "MarketIQ",
-  "description": "ربات تلگرام تحلیل بازار برای مبتدی‌ها — روزانه تا ۳ تحلیل رایگان.",
+  "name": "IQ Market",
+  "short_name": "IQ Market",
+  "description": "ایجنت مالی هوشمند + ربات تلگرام تحلیل بازار — روزانه تا ۳ تحلیل رایگان (آموزشی).",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0b1220",
