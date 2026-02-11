@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://marketiq.pages.dev/sitemap
 Sitemap: https://marketiq.pages.dev/sitemap.xml
 Sitemap: https://marketiq.pages.dev/sitemap.txt

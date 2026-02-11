@@ -5,10 +5,18 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   Content-Security-Policy: default-src 'self'; img-src 'self' data: https://s3.tradingview.com https://www.tradingview.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://s3.tradingview.com; connect-src 'self' https://www.tradingview.com https://s3.tradingview.com; frame-src https://www.tradingview.com https://s.tradingview.com; base-uri 'self'; form-action 'self'
 
+/sitemap
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
 
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
-
+  Cache-Control: public, max-age=3600
 
 /sitemap.txt
   Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
